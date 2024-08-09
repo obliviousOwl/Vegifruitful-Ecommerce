@@ -9,11 +9,7 @@ export default function FeaturedProducts() {
     const [ previews, setPreviews ] = useState([]);
 
     useEffect(() => {
-        fetch(`${process.env.REACT_APP_API_BASE_URL}/products/active`, {
-            headers : { 
-				Authorization : `Bearer ${localStorage.getItem('token')}`
-			}
-        })
+        fetch(`${process.env.REACT_APP_API_BASE_URL}/products/active`)
         .then(res => res.json())
         .then(data => {
             const numbers = [];
