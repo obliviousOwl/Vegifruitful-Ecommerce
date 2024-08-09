@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background: #fff;
+  font-size: 15px;
+  line-height: 1.8;
+  font-weight: 400;
+  color: gray;
+}
+.d-flex {
+  display: flex;
+  flex-direction: column;
+}
+.min-vh-100 {
+  min-height: 100vh;
+}
+.flex-grow-1 {
+  flex: 1;
+}
+.footer {
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+}
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+h2.subheading.mb-4 {
+  color: #fff;
+  font-weight: 300;
+  font-size: 12px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  display: inline-block;
+  font-family: "Poppins", Arial, sans-serif;
+}
+.main-section {
+  padding: 6em 0;
+  position: relative;
+}
+.heading-section .subheading {
+  font-size: 18px;
+  display: block;
+  margin-bottom: 10px;
+  font-family: "Lora", Georgia, serif;
+  font-style: italic;
+  color: #82ae46;
+}
+.heading-section h2 {
+  position: relative;
+  font-size: 40px;
+  font-weight: 600;
+  color: #000000;
+  font-family: "Poppins", Arial, sans-serif;
+}
+@media (max-width: 767.98px) {
+  .heading-section h2 {
+    font-size: 28px;
+  }
+}
+.heading-section.heading-section-white .subheading {
+  color: rgba(255, 255, 255, 0.9);
+}
+.heading-section.heading-section-white h2 {
+  font-size: 30px;
+  color: #fff;
+}
+.heading-section.heading-section-white h2:after,
+.heading-section.heading-section-white h2:before {
+  display: none;
+}
+.heading-section.heading-section-white p {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Remove rounded borders */
+input.form-control,
+button.btn {
+    border-radius: 0 !important; 
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 1.5rem;
+}
